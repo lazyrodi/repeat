@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <% include ../partials/head %>
+
+      <script src="json/data1.js"></script>
+      
+      <script>
+          var
+            $title = "Data 1",
+            $mCurrentPageNumber = 0,
+            $dataArr = [],
+            $dataImportantArr = [];
+                      
+          $(document).ready(function() {
+              document.onkeydown = onKeyDown;
+              
+              loadPage($title);
+          });
+      </script>
+  </head>
+  <body>
+      <% include ../partials/header %>
+      
+      <main class="viewer">
+        <div class="ui main container">
+          <div class="ui grid stackable">
+            <div class="four wide column">
+              <div class="sideMenuLogo">
+                Page Title
+              </div>
+              <div class="ui vertical fluid menu">
+
+                <a class="active item" href="#">
+                  Data 1
+                </a>
+                <a class="item" href="#">
+                  Data 2
+                </a>
+                <a class="item" href="#">
+                  Data 3
+                </a>
+              </div>
+            </div>
+
+            <div class="one wide column"></div>
+
+            <div class="eleven wide column">
+                <div id="subject_segment">
+                    <span id="data_subject"></span>
+                    <div id="doc_version" class="ui brown mini label"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="ui mini buttons">
+                        <button id="btn_full" class="ui button" onclick="onClickFull()">Full</button>
+                        <div class="or" data-text="<>"></div>
+                        <button id="btn_important" class="ui button" onclick="onClickImportant()">Important</button>
+                    </div>
+                </div>
+                
+                <div id="data_pagenation" class="ui mini floated pagination menu right">
+                </div>
+
+                <table class="ui striped table">
+                  <thead>
+                    <tr>
+                      <th colspan="2">
+                          <span id="data_title"></span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="four wide">
+                          <b>data_category_1</b>
+                      </td>
+                      <td id="data_category_1" class="twelve wide">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <b>data_category_2</b>
+                      </td>
+                      <td id="data_category_2">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <b>data_category_3</b>
+                      </td>
+                      <td id="data_category_3">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <% include ../partials/footer %>
+      
+  </body>
+</html>

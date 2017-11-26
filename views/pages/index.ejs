@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <% include ../partials/head %>
+
+      <script>
+          $(document).ready(function() {
+              document.onkeydown = onKeyDown;
+          });
+      </script>
+  </head>
+  <body>
+      <% include ../partials/header %>
+      
+      <main class="index">
+        <div class="page">
+          <div class="ui vertical masthead center aligned segment">
+            <div class="ui text container" style="vertical-align:middle;">
+              <img src="images/logo.png" width="70" align="top">
+                <span class="indexTitle">Repeat!</span>
+              <h2>Static data viewer</h2>
+            </div>
+          </div>
+
+          <div class="ui vertical stripe segment">
+            <div class="ui top aligned stackable grid container">
+              <div class="row">
+                <div class="ten wide column middle aligned">
+                  <h2 class="ui header">What is the "Repeat!"?</h2>
+                  <p>Repeat! is the view platform for JSON style data.</p>
+                  <h2 class="ui header">Fast BUT Unsafety.</h2>
+                  <p>Repeat! is not use Database. You have to share unimportant data only.</p>
+                  <h2 class="ui header">Not input friendly.</h2>
+                    <p>Repeat! use <span class="ui label teal">.js</span> data. Administrator only update data.</p>
+                  <h2 class="ui header">Powered by</h2>
+                    <p>NodeJS, Semantic-UI</p>
+                </div>
+                <div class="six wide centered column">
+                  <img src="https://semantic-ui.com/examples/assets/images/wireframe/white-image.png" class="ui centered large bordered rounded image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui vertical stripe segment" style="padding-bottom: 2.5em;">
+            <div class="ui container">
+              <h2 class="ui header">Release Notes</h2>
+                <h3 class="ui header">V1.0 <span class="releaseDate">(2017. 11. 25.)</span></h3>
+              <ul>
+                <li>You can see template in Category A > Sub-Category A > Case A-1</li>
+                <li>Press '?' key to see shortcut information.</li>
+              </ul>
+              <div class="ui right floated primary button" onclick="location.href='/releasenotes'">Check more Release Notes <i class="right arrow icon"></i></div>
+                <br />
+            </div>
+          </div>
+
+          <div class="ui vertical stripe segment">
+            <div class="ui container">
+              <h2 class="ui header">Extra Subject</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+
+          <div class="ui vertical stripe segment">
+            <div class="ui container">
+              <h2 class="ui header">Extra Subject</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+
+        </div>
+      </main>
+      
+      <% include ../partials/footer %>
+      
+  </body>
+</html>

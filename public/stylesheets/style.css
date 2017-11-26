@@ -1,0 +1,132 @@
+/* Common */
+body {
+    overflow-y:scroll;
+}
+
+p, li {
+    line-height: 1.7em;
+}
+
+/* Header */
+  /* Header - nav-bar */
+.ui.fixed {
+	background-color: #eeeeee;
+}
+
+.ui.menu .header.item .logoImage {
+  margin-right: 0.5em;
+}
+
+.ui.menu a.header {
+  padding-right: 1em;
+}
+
+.sub_category {
+  margin-right: 0.7em;
+}
+
+/* Header - Invisible Contents - Modal */
+.modal_main_title {
+    font-size: 0.7em;
+    color: aqua;
+}
+
+.modal_sub_title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: aquamarine;
+}
+
+.modal_text {
+    font-size: 1.2em;
+    color: beige;
+}
+
+/* Main */
+body {
+  background-color: #eeeeee;
+  /*
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  */
+}
+
+main {
+    background-color: #FFFFFF;
+    padding-bottom: 2em;
+    /*
+      flex: 1;
+      overflow-y: scroll;
+    */
+}
+
+  /* Main - index */
+.page .ui.masthead {
+    background-color:#eeeeee;
+    padding: 9em 0em 5em 0em;
+}
+
+.indexTitle {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+main.index .ui.container p {
+    padding-left: 1.5em;
+}
+
+.releaseDate {
+    font-size: 0.8em;
+    color: grey;
+}
+
+  /* Main - viewer */
+main.viewer {
+    padding: 6em 0em 2em 0em;
+}
+
+#subject_segment {
+    margin-bottom: 1.5em;
+}
+
+#data_subject {
+    font-size: 3em;
+    margin-right: 0.2em;
+}
+
+    /* Main - viewer - sideMenu */
+.sideMenuLogo {
+    text-align: center;
+    padding: 0.4em 0em;
+    background-color:#607D8B;
+    color:white;
+    font-size:2.5em;
+    height:50px;
+}
+    /* Main - viewer - Table */
+#pagination_segment {
+    margin-bottom: 1em;
+}
+
+#data_pagenation {
+    margin: 1.2em 0em;
+}
+
+.ui.table th {
+    height: 60px;
+}
+
+/* Footer */
+.ui.footer.segment {
+	padding: 5em 0em 2em 0em;
+	background-color: #eeeeee;
+    border-top: 1px solid #dddddd;
+}
+
+.copyright {
+  color: #1f1f1f;
+  font-weight: bold;
+  font-size: 10pt;
+  margin-top: 1em;
+}

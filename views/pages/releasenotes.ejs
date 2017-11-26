@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <% include ../partials/head %>
+
+      <script>
+          $(document).ready(function() {
+              document.onkeydown = onKeyDown;
+          });
+      </script>
+  </head>
+  <body>
+      <% include ../partials/header %>
+      
+      <main class="index">
+        <div class="page">
+          <div class="ui vertical masthead center aligned segment">
+            <div class="ui text container" style="vertical-align:middle;">
+                <span class="indexTitle">Release Notes</span>
+            </div>
+          </div>
+
+          <div class="ui vertical segment">
+            <div class="ui container">
+                <h3 class="ui header">v1.0</h3>
+                <div class="ui segment">
+                    <h5 class="ui header">2017. 11. 25.</h5>
+                  <ul>
+                    <li>You can see template in Category A > Sub-Category A > Case A-1</li>
+                    <li>Press '?' key to see shortcut information.</li>
+                  </ul>                
+                </div>
+            </div>
+          </div>
+
+          <div class="ui vertical segment">
+            <div class="ui container">
+                <h3 class="ui header">v2.0</h3>
+                <div class="ui segment">
+                    <h5 class="ui header">xxxx. xx. xx.</h5>
+                  <ul>
+                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                    <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
+                  </ul>                
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+      
+      <% include ../partials/footer %>
+      
+  </body>
+</html>
